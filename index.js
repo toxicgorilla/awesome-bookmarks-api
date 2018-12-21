@@ -7,6 +7,9 @@ const Bookmark = require('./models/Bookmark');
 
 mongoose.connect(config.db);
 
+
+
+
 mongoose.connection.once('open', () => {
   console.log('Connected to database');
 });
@@ -73,7 +76,7 @@ async function StartServer() {
     await server.start();
   } catch (err) {
     console.log(`Error while starting server: ${err.message}`);
-  }
+  }  
 
   console.log(`Server running at: ${server.info.uri}`);
 }

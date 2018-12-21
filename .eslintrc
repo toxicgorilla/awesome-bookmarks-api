@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [  
+    "jsx-a11y",
+    "import"
+  ],
+  "extends": [
+    "airbnb"
+  ],
+  "globals": {
+    "document": true,
+    "window": true
+  },
+  "env": {
+    "jasmine": true
+  },
+  "rules": {
+    "func-names": "off",
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "no-mixed-operators": "off",
+    "linebreak-style": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 150,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreComments": true
+      }
+    ],
+    "prefer-promise-reject-errors": "off",
+    "object-curly-newline": "off",
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-nested-ternary": "off",
+  }
+}
