@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "hapi": "^17.8.1",
+    "mongoose": "^5.4.0",
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "deploy": "now --public"
+  },
+  "now": {
+    "alias": "awesome-bookmarks",
+    "name": "awesome-bookmarks",
+    "env": {
+      "PORT": "@port",
+      "DB": "@db",
+      "SECRET": "@secret"
+    },
+    "type": "Dockerfile"
+  }
+}
