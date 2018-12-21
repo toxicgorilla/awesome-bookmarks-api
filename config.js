@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const host = process.env.APP_HOST;
 const port = process.env.APP_PORT;
+const whoIsAwesome = "DAN AND STEVE, OBVS";
 
 const db = `${process.env.DB_CONNECTION}://${process.env.DB_USERNAME}:${
   process.env.DB_PASSWORD
